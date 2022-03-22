@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xevloop-master.flake = false;
+  inputs.src-xevloop-master.ref   = "refs/heads/master";
   inputs.src-xevloop-master.owner = "PMunch";
-  inputs.src-xevloop-master.ref   = "master";
   inputs.src-xevloop-master.repo  = "xevloop";
   inputs.src-xevloop-master.type  = "github";
   
