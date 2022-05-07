@@ -36,8 +36,7 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-xevloop-master": "src-xevloop-master",
-        "x11": "x11"
+        "xevloop-master": "xevloop-master"
       }
     },
     "src-x11-master": {
@@ -77,20 +76,22 @@
     "x11": {
       "inputs": {
         "flakeNimbleLib": [
+          "xevloop-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "xevloop-master",
           "nixpkgs"
         ],
         "src-x11-master": "src-x11-master"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1651918616,
-        "narHash": "sha256-Rx3dWt7mFaB1DDdUxSRNKxuVDXiDa0JkqlhWs50Rl+0=",
+        "lastModified": 1651556249,
+        "narHash": "sha256-/XDlPFLv8h7j7YwsiPh9C+vkhNNhULNnUt+8FcIgJHo=",
         "owner": "nim-nix-pkgs",
         "repo": "x11",
-        "rev": "ac8e821023d2484dfdfec8294b3c52fcfb701161",
+        "rev": "a92526f4e77a678bc8b0a3f7654d83eab679760d",
         "type": "github"
       },
       "original": {
@@ -98,6 +99,34 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "x11",
+        "type": "github"
+      }
+    },
+    "xevloop-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xevloop-master": "src-xevloop-master",
+        "x11": "x11"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556868,
+        "narHash": "sha256-WwQCo+pw4pRiY7xI7xHLvPGgEuOF3HseSKS2C2rpuYQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "xevloop",
+        "rev": "2e0df8dc58a2aaffabd28b5703f3bb8637201e50",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "xevloop",
         "type": "github"
       }
     }
